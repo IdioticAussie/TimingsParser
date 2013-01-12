@@ -1,0 +1,8 @@
+name: TimingsParser
+version: 0.1
+author: chaseoes
+main: me.chaseoes.timingsparser.TimingsParser
+commands:
+  timingsparser:
+    description: TP
+    usage: /timingsparser [args]
