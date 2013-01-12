@@ -41,9 +41,9 @@ public class TimingsFile {
             if (line.contains("Total time ")) {
                 int percent = Math.round((float) Long.parseLong(getWord(line, 3)) * 100 / totalTime);
                 if (percent != 0) {
+                    pluginNames.append(currentPlugin);
                     pluginNames.append(" (" + percent + "%)|");
                     pluginTimes.append(percent + ",");
-                    pluginNames.append(currentPlugin);
                 }
                 currentPlugin = null;
             }
